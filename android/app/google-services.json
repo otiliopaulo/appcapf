@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "736930064403",
+    "project_id": "appagenda-ca7f1",
+    "storage_bucket": "appagenda-ca7f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:736930064403:android:102532c9a5acd318a2b7e6",
+        "android_client_info": {
+          "package_name": "br.com.otiliopaulo.appagenda"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "736930064403-tihle6tehd7ss4a9909on1s5kfhasiqj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiN7HBvLq4tS3YTNw6t-SomCvVUfHUBUI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "736930064403-tihle6tehd7ss4a9909on1s5kfhasiqj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "736930064403-8r5dnkaa6is3nothu2h6o22jjpao3eol.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "br.com.otiliopaulo.appcapf"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:736930064403:android:27d2e0d1606bdd43a2b7e6",
+        "android_client_info": {
+          "package_name": "br.com.otiliopaulo.appcapf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "736930064403-tihle6tehd7ss4a9909on1s5kfhasiqj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiN7HBvLq4tS3YTNw6t-SomCvVUfHUBUI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "736930064403-tihle6tehd7ss4a9909on1s5kfhasiqj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "736930064403-8r5dnkaa6is3nothu2h6o22jjpao3eol.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "br.com.otiliopaulo.appcapf"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
