@@ -2,10 +2,13 @@ import 'dart:async';
 
 import 'package:appcapf/Login.dart';
 import 'package:appcapf/SugestoesForm.dart';
+import 'package:appcapf/casosespeciais.dart';
 import 'package:appcapf/comissao_list.dart';
+import 'package:appcapf/cooperadores.dart';
 import 'package:appcapf/eventos.dart';
 import 'package:appcapf/firebase_options.dart';
 import 'package:appcapf/pdfViewerPage.dart';
+import 'package:appcapf/posmatrimonio.dart';
 import 'package:appcapf/prematrimonio.dart';
 import 'package:appcapf/setores.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -50,6 +53,9 @@ class MyApp extends StatelessWidget {
         '/eventosDados': (context) => const EventosDados(),
         '/sugestoesForm': (context) => SugestaoForm(),
         '/login': (context) => Login(),
+        '/posmatrimonio': (contato) => PosMatrimonio(),
+        '/casosespeciais': (context) => CasosEspeciais(),
+        '/cooperadores': (context) => Cooperadores(),
       },
     );
   }
@@ -117,7 +123,7 @@ class _MyHomeState extends State<MyHome> {
     // ); // this has changed
   }
 
-  final Uri url = Uri.parse('https://www.lojacnpf.org.br/');
+  final Uri url_lojaCnpf = Uri.parse('https://www.lojacnpf.org.br/');
 
   @override
   Widget build(BuildContext context) {
@@ -144,21 +150,21 @@ class _MyHomeState extends State<MyHome> {
                 Navigator.pushNamed(context, '/');
               },
             ),
-            ListTile(
-              leading: Icon(Icons.heart_broken_sharp),
-              title: Text('Caixinha do Amor'),
-              onTap: () {
-                // ação a ser executada quando o item é pressionado
-                Navigator.pop(context);
-              },
-            ),
+            // ListTile(
+            //   leading: Icon(Icons.heart_broken_sharp),
+            //   title: Text('Caixinha do Amor'),
+            //   onTap: () {
+            //     // ação a ser executada quando o item é pressionado
+            //     Navigator.pop(context);
+            //   },
+            // ),
             ListTile(
               leading: Icon(Icons.cast_for_education_rounded),
               title: Text('Livros da Pastoral Familiar'),
               onTap: () {
                 // ação a ser executada quando o item é pressionado
                 //Navigator.pop(context);
-                launchUrl(url);
+                launchUrl(url_lojaCnpf);
               },
             ),
             ListTile(

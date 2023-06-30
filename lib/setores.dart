@@ -74,7 +74,7 @@ class _SetoresState extends State<Setores> {
                       fontWeight: FontWeight.bold),
                 ),
                 onPressed: () {
-                  Navigator.pushNamed(context, '/prematrimonio');
+                  Navigator.pushNamed(context, '/posmatrimonio');
                 },
               ),
             ),
@@ -101,7 +101,7 @@ class _SetoresState extends State<Setores> {
                       fontWeight: FontWeight.bold),
                 ),
                 onPressed: () {
-                  Navigator.pushNamed(context, '/prematrimonio');
+                  Navigator.pushNamed(context, '/casosespeciais');
                 },
               ),
             ),
@@ -128,7 +128,7 @@ class _SetoresState extends State<Setores> {
                       fontWeight: FontWeight.bold),
                 ),
                 onPressed: () {
-                  Navigator.pushNamed(context, '/prematrimonio');
+                  Navigator.pushNamed(context, '/cooperadores');
                 },
               ),
             ),

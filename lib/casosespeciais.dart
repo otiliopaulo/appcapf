@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 
-class PreMatrimonio extends StatefulWidget {
-  const PreMatrimonio({super.key});
+class CasosEspeciais extends StatefulWidget {
+  const CasosEspeciais({super.key});
 
   @override
-  State<PreMatrimonio> createState() => _PreMatrimonioState();
+  State<CasosEspeciais> createState() => _CasosEspeciaisState();
 }
 
-class _PreMatrimonioState extends State<PreMatrimonio> {
+class _CasosEspeciaisState extends State<CasosEspeciais> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Setor Pré-Matrimônio',
+          'Setor Casos Especiais',
         ),
       ),
       body: SingleChildScrollView(
@@ -94,7 +94,7 @@ class _PreMatrimonioState extends State<PreMatrimonio> {
                     child: ElevatedButton(
                       onPressed: () {},
                       child: Text(
-                        'Itinerário Vivencial',
+                        'Orientações Nova União',
                         style: TextStyle(fontSize: 20.0),
                         textAlign: TextAlign.center,
                       ),
@@ -116,7 +116,7 @@ class _PreMatrimonioState extends State<PreMatrimonio> {
                     child: ElevatedButton(
                       onPressed: () {},
                       child: Text(
-                        'Cadastro de Noivos',
+                        'Cadastro para Matrimônio',
                         style: TextStyle(fontSize: 20.0),
                         textAlign: TextAlign.center,
                       ),
@@ -143,7 +143,7 @@ class _PreMatrimonioState extends State<PreMatrimonio> {
                     child: ElevatedButton(
                       onPressed: () {},
                       child: Text(
-                        'Método de Ovulação Billings',
+                        'Vídeo Explicativo',
                         style: TextStyle(fontSize: 20.0),
                         textAlign: TextAlign.center,
                       ),

@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 
-class PreMatrimonio extends StatefulWidget {
-  const PreMatrimonio({super.key});
+class Cooperadores extends StatefulWidget {
+  const Cooperadores({super.key});
 
   @override
-  State<PreMatrimonio> createState() => _PreMatrimonioState();
+  State<Cooperadores> createState() => _CooperadoresState();
 }
 
-class _PreMatrimonioState extends State<PreMatrimonio> {
+class _CooperadoresState extends State<Cooperadores> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Setor Pré-Matrimônio',
+          'Setor Cooperadores à Vida',
         ),
       ),
       body: SingleChildScrollView(
@@ -94,7 +94,7 @@ class _PreMatrimonioState extends State<PreMatrimonio> {
                     child: ElevatedButton(
                       onPressed: () {},
                       child: Text(
-                        'Itinerário Vivencial',
+                        'Itinerário à Vida',
                         style: TextStyle(fontSize: 20.0),
                         textAlign: TextAlign.center,
                       ),
@@ -116,7 +116,7 @@ class _PreMatrimonioState extends State<PreMatrimonio> {
                     child: ElevatedButton(
                       onPressed: () {},
                       child: Text(
-                        'Cadastro de Noivos',
+                        'Cadastro',
                         style: TextStyle(fontSize: 20.0),
                         textAlign: TextAlign.center,
                       ),
@@ -143,7 +143,7 @@ class _PreMatrimonioState extends State<PreMatrimonio> {
                     child: ElevatedButton(
                       onPressed: () {},
                       child: Text(
-                        'Método de Ovulação Billings',
+                        'Hora da Vida',
                         style: TextStyle(fontSize: 20.0),
                         textAlign: TextAlign.center,
                       ),
