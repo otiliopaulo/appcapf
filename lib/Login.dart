@@ -52,6 +52,8 @@ class _LoginState extends State<Login> {
   }
 
   login() async {
+    // Temporariamente até corrigir o fairebase
+    //await Navigator.of(context).pushNamed('/');
     try {
       UserCredential userCredential =
           await _firebaseAuth.signInWithEmailAndPassword(

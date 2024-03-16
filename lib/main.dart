@@ -36,7 +36,24 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        brightness: Brightness.light,
+        primaryColor: Colors.blue,
+        primarySwatch: Colors.amber,
+        appBarTheme: AppBarTheme(color: Colors.blue),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.blue,
+            textStyle: TextStyle(
+              color: Colors.white,
+            ),
+          ),
+        ),
+        textTheme: TextTheme(
+          bodySmall: TextStyle(
+            color: Colors.white,
+            fontSize: 20.0,
+          ),
+        ),
       ),
       //home: const MyHome(),
       //initialRoute: '/',
@@ -78,22 +95,23 @@ class _MyHomeState extends State<MyHome> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    _streamSubscription =
-        FirebaseAuth.instance.authStateChanges().listen((User? user) {
-      if (user == null) {
-        setState(() {
-          userLoged = false;
-        });
-        print('User is currently signed out!');
-        //Navigator.of(context).pushNamed('/login');
-      } else {
-        setState(() {
-          userLoged = true;
-        });
-        print('User is signed in!');
-        //Navigator.of(context).pushNamed('/home');
-      }
-    });
+    _streamSubscription = FirebaseAuth.instance.authStateChanges().listen(
+      (User? user) {
+        if (user == null) {
+          setState(() {
+            userLoged = false;
+          });
+          print('User is currently signed out!');
+          //Navigator.of(context).pushNamed('/login');
+        } else {
+          setState(() {
+            userLoged = true;
+          });
+          print('User is signed in!');
+          //Navigator.of(context).pushNamed('/home');
+        }
+      },
+    );
   }
 
   @override
@@ -130,6 +148,7 @@ class _MyHomeState extends State<MyHome> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Pastoral Familiar'),
+        backgroundColor: Theme.of(context).primaryColor,
       ),
       drawer: Drawer(
         child: ListView(
@@ -258,6 +277,7 @@ class Home extends StatelessWidget {
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisSize: MainAxisSize.max,
             children: [
               Image.asset(
                 'images/logo_pf.png',
@@ -267,16 +287,24 @@ class Home extends StatelessWidget {
                 height: 10,
               ),
               Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
                     height: 182,
                     width: 182,
+                    //color: Theme.of(context).primaryColor,
                     child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        shape: ContinuousRectangleBorder(
+                          borderRadius: BorderRadius.zero,
+                        ),
+                      ),
                       child: Text(
                         'Calendário',
                         style: TextStyle(
                           fontSize: 24.0,
                           fontWeight: FontWeight.bold,
+                          color: Theme.of(context).primaryColorLight,
                         ),
                       ),
                       onPressed: () => {
@@ -291,6 +319,11 @@ class Home extends StatelessWidget {
                     height: 182,
                     width: 182,
                     child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        shape: ContinuousRectangleBorder(
+                          borderRadius: BorderRadius.zero,
+                        ),
+                      ),
                       child: Text(
                         'Setores',
                         style: TextStyle(
@@ -310,11 +343,17 @@ class Home extends StatelessWidget {
                 height: 5.0,
               ),
               Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
                     height: 182,
                     width: 182,
                     child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        shape: ContinuousRectangleBorder(
+                          borderRadius: BorderRadius.zero,
+                        ),
+                      ),
                       child: Text(
                         'Eventos',
                         style: TextStyle(
@@ -333,6 +372,11 @@ class Home extends StatelessWidget {
                     height: 182,
                     width: 182,
                     child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        shape: ContinuousRectangleBorder(
+                          borderRadius: BorderRadius.zero,
+                        ),
+                      ),
                       child: Text(
                         'Fale conosco',
                         textAlign: TextAlign.center,
